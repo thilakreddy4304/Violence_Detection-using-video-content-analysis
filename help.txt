@@ -1,0 +1,41 @@
+Minimum Hardware Requirements:
+-----------------------------
+i7 processor 10th gen 
+GPU = NVIDIA RTX 2080 or more
+RAM  = 16GB
+Storage = 20GB
+
+
+Steps to be followed:
+---------------------
+1. Install NVIDIA CUDA 10.0 Toolkit and cuDNN for tensorflow requirements.
+2. Install Microsoft Visual studio and install c++ extensions for Windows SDK.
+3. Install Anaconda (python == 3.6.10)
+4. Install Visual Studio Code or Pycharm.
+5. Install necessary extensions for Visual Studio such as code runner, python, pylance.
+4. Create a virtual Environment using conda in Anaconda prompt
+	conda create -n <env_name>
+5. Activate the environment using the following command:
+	conda activate <env_name>
+6. Go to the project path directory.
+7. Install necessary packages mentioned in the requirements.txt file using pip command.
+	pip install <package_name>
+
+
+Dataset:
+---------
+Dataset size = 1.8GB
+Initial test dataset directory	: ../video
+Training model dataset		: ../Dataset
+Final testing purpose videos	: ../Final_Test
+
+
+Executing the source code:
+--------------------------
+1. run the initial_test.py file and make sure that it displays the message as 
+	"successfully opened dynamic library cuda"
+2. run the run.py file 
+3. Wait till it asks "Enter the video name:"
+4. Enter any random video name present in the Final_Test folder to test.
+5. A window will be popped classifying the input video as "Violence" or "Non-Violence" with Accuracy.
+
